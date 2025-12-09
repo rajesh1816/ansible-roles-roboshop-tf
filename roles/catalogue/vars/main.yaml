@@ -1,1 +1,1 @@
-MONGODB_HOST: mongodb.rajeshit.space
+MONGODB_HOST: "mongodb-{{ env }}.rajeshit.space"
