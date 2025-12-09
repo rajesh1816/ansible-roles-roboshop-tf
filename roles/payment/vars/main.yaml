@@ -1,0 +1,4 @@
+CART_HOST: cart.rajeshit.space
+USER_HOST: user.rajeshit.space
+RABBITMQ_HOST: rabbitmq.rajeshit.space
+PAYMENT_PASSWORD: roboshop123
