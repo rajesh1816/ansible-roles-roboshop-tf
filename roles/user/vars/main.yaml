@@ -1,2 +1,4 @@
-REDIS_HOST: redis.rajeshit.space
-MONGODB_HOST: mongodb.rajeshit.space
+# REDIS_HOST: redis.rajeshit.space
+# MONGODB_HOST: mongodb.rajeshit.space
+REDIS_HOST: redis-{{ env }}.rajeshit.space
+MONGODB_HOST: mongodb-{{ env }}.rajeshit.space
