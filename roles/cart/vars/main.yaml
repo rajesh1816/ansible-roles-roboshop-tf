@@ -1,2 +1,3 @@
 REDIS_HOST: redis.rajeshit.space
-CATALOGUE_HOST: catalogue.rajeshit.space
+#CATALOGUE_HOST: catalogue.rajeshit.space
+CATALOGUE_HOST: catalogue.backend-{{ env }}.rajeshit.space
