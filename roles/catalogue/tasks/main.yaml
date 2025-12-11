@@ -8,11 +8,6 @@
     name: common
     tasks_from: nodejs
 
-- name: systemctl setup
-  include_role:
-    name: common
-    tasks_from: systemctl
-
 - name: copying mongo repo for clinet installation
   ansible.builtin.copy:
     src: mongo.repo
@@ -34,3 +29,8 @@
 - name: load products
   ansible.builtin.shell: mongosh --host {{ MONGODB_HOST }} < /app/db/master-data.js
   when: catalogue_output.stdout | int < 0
+
+- name: systemctl setup
+  include_role:
+    name: common
+    tasks_from: systemctl
